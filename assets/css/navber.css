@@ -123,8 +123,8 @@
 
 .main-navbar .navbar .navbar-nav .nav-item a {
     color: black;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 500;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0px;
@@ -216,6 +216,7 @@
 
 .main-navbar .navbar .navbar-nav .nav-item a.active {
     color: #FBDC4C;
+    font-weight: 800;
 }
 
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {

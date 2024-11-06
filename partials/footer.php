@@ -181,6 +181,7 @@
     <script src="assets/js/gallery-popup.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/video.js"></script>
+    <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
 
 </body>
 

@@ -42,6 +42,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+        <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -83,7 +85,7 @@
                             </div>
                             <div class="option-item">
                             
-                                <a href="#">
+                                <a href="sign-in.php">
                                     <p class="auth">Sign up</p>
                                 </a>
                             </div>
@@ -104,7 +106,7 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="index-2.html">
+                            <a href="index.php">
                                 <img src="assets/img/logo.png" alt="logo">
                             </a>
                         </div>

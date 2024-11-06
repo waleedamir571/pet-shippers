@@ -51,16 +51,78 @@ This files table contents are outlined below>>>>>
     --transition: .4s all ease-in-out;
 }
 
+.form-control3:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+    text-align: left;
+}
+
+.check-label{
+    color: #9FA6B2;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_service_item_wrapper1 {
+    border-radius: 0px;
+    border: 0px solid #DDD;
+    background: #FFF;
+    padding: 30px 35px;
+    margin-top: 30px;
+    transition: var(--transition);
+    position: relative;
+    text-align: center;
+    fill: #FFF;
+    height: auto;
+    filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
+}
+
 .form-check-input:checked {
     background-color: #1BB0CE;
     border-color: #1BB0CE;
     border-radius: 20px;
 }
 
+.vendor{
+    color: #000 !important;
+text-align: center;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px;
+}
+
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
 
+}
+
+.ptb-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.pets-info{
+    color: var(--black, #000) !important;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
 }
 
 html,
@@ -74,11 +136,69 @@ label.control-label1 {
     color: #1BB0CE;
 }
 
+.form-control3 {
+    height: 55px;
+    border: none;
+    box-shadow: 0px 1px 13px 0px #0000000d;
+    padding: 10px 22px;
+    font-size: 14px;
+    /* background-color: #FBF8FF; */
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    border: 1px solid #54C3DA;
+    width: 100%;
+    color: #9FA6B2;
+}
+
+.dropzone1 {
+    /* min-height: 150px; */
+    /* border: 1px solid #54C3DA !important; */
+    border-radius: 0px !important;
+    padding: 20px 20px;
+    border-style: 1px solid dashed #54C3DA;
+    border: 2px dashed #A09C9C;
+    stroke-width: 1px;
+    stroke: #A09C9C;
+}
+
 .category1 {
     font-size: 32px;
     font-weight: 400;
     line-height: 97px;
     color: black;
+}
+
+h3.fs-5.fw-bold.text-gray-900.mb-1 {
+    color: var(--gray-400, #9FA6B2);
+    /* font-family: Inter; */
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400 !important;
+    padding-top: 20px;
+    line-height: normal;
+}
+
+.dropzone {
+    min-height: 150px;
+    border: 1px solid #54C3DA !important;
+    border-radius: 12px !important;
+    padding: 20px 20px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.form-label-text {
+    color: var(--black, #000) !important;
+    /* font-family: Raleway; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 10px;
+    text-align: left !important;
 }
 
 .category {
@@ -524,7 +644,13 @@ textarea.form-control {
 }
 
 .section_heading h2 {
-    position: relative;
+    /* position: relative; */
+    color: #000;
+    /* font-family: Raleway; */
+    font-size: 60px;
+    /* font-style: normal; */
+    font-weight: 600;
+    line-height: 81.977px;
 }
 
 .section_heading h2::after {
@@ -617,7 +743,7 @@ textarea.form-control {
 
 .btn_md {
     padding: 10px 29px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .btn_sm {
@@ -812,20 +938,28 @@ textarea.form-control {
     box-shadow: none;
 }
 
+.ptb-100-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 /* --Service Area-- */
 .main_service_item_wrapper {
-    border-radius: 12px;
-    border: 1px solid #DDD;
+    border-radius: 0px;
+    border: 0px solid #DDD;
     background: #FFF;
     padding: 30px 35px;
     margin-top: 30px;
     transition: var(--transition);
     position: relative;
+    text-align: center;
+    fill: #FFF;
+    height: 400px;
+    filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
 }
 
 .main_service_item_wrapper:hover {
     background-color: #f8f8ff;
-    border: 1px solid var(--main-color);
+    border: 0px solid var(--main-color);
 }
 
 .service_hover_right {
@@ -3082,7 +3216,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     top: 0;
     right: 15px;
     color: #fff;
-    background-color: var(--main-color);
+    background-color: #22A6B3;
     z-index: 4;
     width: 40px;
     text-align: center;
@@ -3092,7 +3226,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     visibility: hidden;
     -webkit-transition: .9s;
     transition: .9s;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .go-top.active {

@@ -76,7 +76,7 @@
                     <div class="col-lg-4 col-md-2">
                         <div class="top_header_social_icon">
                             <div class="option-item">
-                                <a href="#">
+                                <a href="./sign-in.php">
                                     <p class="auth">Sign Up</p>
                                 </a>
                             </div>
@@ -97,7 +97,7 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="index-2.html">
+                            <a href="index.php">
                                 <img src="assets/img/logo.png" alt="logo">
                             </a>
                         </div>
@@ -120,7 +120,7 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a href="about.html" class="nav-link">Pets </a>
+                                    <a href="#" class="nav-link">Pets </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -138,11 +138,11 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="about.html" class="btn btn_theme btn_md">Transporter Sign Up</a>
+                                    <a href="#" class="btn btn_theme btn_md">Transporter Sign Up</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="about.html" class="btn btn_black btn_md">Sign In</a>
+                                    <a href="sign-in.php" class="btn btn_black btn_md">Sign In</a>
                                 </li>
 
 

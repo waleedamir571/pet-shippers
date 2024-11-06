@@ -11,7 +11,7 @@
                         </h1>
                         <p>family owned and operated transport service exclusively for pets and animals.</p>
 
-                        <a href="about.html" class="btn btn_black btn_md">Get a Free Estimate</a>
+                        <a href="categories.php" class="btn btn_black btn_md">Get a Free Estimate</a>
 
 
 
@@ -32,28 +32,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="banner_bottom_item">
+                  <a href="shipment-information.php">
+                  <div class="banner_bottom_item">
                         <img src="assets/img/home/cat.png" alt="img">
                         <div class="p-relative">
-                            <a href="#" class="btn btn_theme btn_md">Get a Estimate</a>
+                            <a href="shipment-information.php" class="btn btn_theme btn_md">Get a Estimate</a>
                         </div>
                     </div>
+                </a> 
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <a href="shipment-information.php">
                     <div class="banner_bottom_item">
                         <img src="assets/img/home/bird.png" alt="img">
                         <div class="p-relative">
-                            <a href="#" class="btn btn_green btn_md">Get a Estimate</a>
+                            <a href="shipment-information.php" class="btn btn_green btn_md">Get a Estimate</a>
                         </div>
                     </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <a href="shipment-information.php">
                     <div class="banner_bottom_item">
                         <img src="assets/img/home/dog.png" alt="img">
                         <div class="p-relative">
-                            <a href="#" class="btn btn_theme btn_md">Get a Estimate</a>
+                            <a href="shipment-information.php" class="btn btn_theme btn_md">Get a Estimate</a>
                         </div>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -289,7 +295,7 @@
                             visited as part of the application process,
                             raised concerns as to ...</p>
 
-                        <a href="about.html" class="btn btn_theme btn_md">Read More</a>
+                        <a href="#" class="btn btn_theme btn_md">Read More</a>
                     </div>
 
 
@@ -315,7 +321,7 @@
                             strikes the upper surface of the
                             impenetrable foliage of my t ...</p>
 
-                        <a href="about.html" class="btn btn_theme btn_md">Read More</a>
+                        <a href="#" class="btn btn_theme btn_md">Read More</a>
                     </div>
 
 

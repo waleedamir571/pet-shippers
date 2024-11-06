@@ -10,6 +10,40 @@
         display: table-row;
     }
 
+    .btn-success:hover {
+        color: #fff;
+        background-color: #22A6B3 !important;
+        border-color: #22A6B3 !important;
+    }
+
+    .btn-success {
+    background-color: #22A6B3 !important;
+    border-color: #22A6B3 !important;
+    color: #fff !important;
+}
+
+    .stepwizard-row:before {
+        top: 14px;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color: #22A6B3;
+        /* Default blue color */
+        z-index: 0;
+        height: 15px;
+        border-radius: 12px;
+        transition: background-color 0.3s;
+        /* Add a smooth transition */
+    }
+
+    .stepwizard-row.active-line:before {
+        background-color: black;
+        /* Active color */
+    }
+
+
     .stepwizard {
         display: table;
         width: 100%;
@@ -18,16 +52,16 @@
     }
 
     .btn-circle:active {
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 55px;
-    background: green;
-    padding-top: 25px;
-}
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.428571429;
+        border-radius: 55px;
+        background: green;
+        padding-top: 25px;
+    }
 
 
 
@@ -65,6 +99,7 @@
         top: -2rem;
     }
 
+
     .btn-circle {
         width: 90px;
         height: 90px;
@@ -73,9 +108,17 @@
         font-size: 12px;
         line-height: 1.428571429;
         border-radius: 55px;
-        background: #22A6B3;
-        border-color: #22A6B3;
+        background: #B9ECF6;
+        border-color: #B9ECF6;
         padding-top: 25px;
+        z-index: 1;
+        background-color: #B9ECF6;
+    }
+
+    .btn-active {
+        background-color: #22A6B3;
+        color: #fff;
+        border: #22A6B3;
     }
 
     .file-input-container {
@@ -118,7 +161,46 @@
         display: none;
     }
 
-    
+    .stepwizard-row:before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 13px;
+        background-color: #B9ECF6;
+        z-index: 0;
+        transition: width 0.3s ease;
+    }
+
+    .stepwizard-row .line-progress {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 0;
+        height: 13px;
+        background-color: #22A6B3;
+        z-index: 0;
+        transition: width 0.3s ease;
+        border-radius: 20px;
+        /* width: 135px; */
+    }
+
+    .line-step-1 {
+        width: 25%;
+    }
+
+    .line-step-2 {
+        width: 50%;
+    }
+
+    .line-step-3 {
+        width: 75%;
+    }
+
+    .line-step-4 {
+        width: 100%;
+    }
 </style>
 
 
@@ -129,28 +211,28 @@
                 <div class="stepwizard-step col-xs-3">
                     <a href="#step-1" type="button" class="btn btn-success btn-circle"><img
                             src="assets/img/form/4 (4).png" alt=""></a>
-                    <p><small>Shipper</small></p>
+
                 </div>
                 <div class="stepwizard-step col-xs-3">
                     <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><img
                             src="assets/img/form/4 (2).png" alt=""></a>
-                    <p><small>Destination</small></p>
+
                 </div>
                 <div class="stepwizard-step col-xs-3">
                     <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><img
                             src="assets/img/form/4 (3).png" alt=""></a>
-                    <p><small>Schedule</small></p>
+
                 </div>
                 <div class="stepwizard-step col-xs-3">
                     <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><img
                             src="assets/img/form/4 (1).png" alt=""></a>
-                    <p><small>Cargo</small></p>
+
                 </div>
             </div>
         </div>
 
         <form role="form">
-             <div class="panel panel-primary setup-content" id="step-1">
+            <div class="panel panel-primary setup-content" id="step-1">
                 <div class="panel-heading">
                     <h3 class="category cabin">Shipment Information</h3>
                     <p>Choose shipping information</p>
@@ -210,7 +292,7 @@
                     <h3 class="category1 cabin">Add More Information*</h3>
                     <div class="row">
                         <div class="col-md-2">
-                           
+
                             <div class="file-input-container">
                                 <label class="control-label">Upload Picture</label>
                                 <button class="styled-button" id="uploadButton">Choose file</button>
@@ -415,7 +497,7 @@
                             We do not sell, rent or share your email and you may opt out of all emails at any time.</p>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="panel panel-primary setup-content" id="step-4">
                 <div class="panel-heading">
@@ -472,7 +554,8 @@
                                 </div>
                                 <div class="our_pricing_bottom">
                                     <ul>
-                                        <li class="active"><img src="assets/img/home/clock.png" alt=""> AVG. Time to Book
+                                        <li class="active"><img src="assets/img/home/clock.png" alt=""> AVG. Time to
+                                            Book
                                         </li>
                                         <p class="d-days"> 2-3 days</p>
 
@@ -483,11 +566,11 @@
                                             <div class="col-md-10">
                                                 <div class="form-group">
                                                     <label class="control-label1">Enter your Price</label>
-                                                    <input maxlength="100" type="number" required="required" class="form-control2"
-                                                        placeholder="$ 364.00" />
+                                                    <input maxlength="100" type="number" required="required"
+                                                        class="form-control2" placeholder="$ 364.00" />
                                                 </div>
                                             </div>
-                                           
+
                                         </div>
                                         <div class="ptb-10">
                                             <div class="border-bottom"></div>
@@ -541,46 +624,83 @@
 </script>
 
 <script>
-    $(document).ready(function () {
+  $(document).ready(function () {
+    var navListItems = $('div.setup-panel div a'),
+        allWells = $('.setup-content'),
+        allNextBtn = $('.nextBtn'),
+        stepwizardRow = $('.stepwizard-row');
 
-        var navListItems = $('div.setup-panel div a'),
-            allWells = $('.setup-content'),
-            allNextBtn = $('.nextBtn');
+    allWells.hide();
 
-        allWells.hide();
+    function updateLineProgress(index) {
+        stepwizardRow.find('.line-progress').remove();
 
-        navListItems.click(function (e) {
-            e.preventDefault();
-            var $target = $($(this).attr('href')),
-                $item = $(this);
+        // Add a progress line
+        var progressLine = $('<div class="line-progress"></div>');
+        stepwizardRow.append(progressLine);
 
-            if (!$item.hasClass('disabled')) {
-                navListItems.removeClass('btn-success').addClass('btn-default');
-                $item.addClass('btn-success');
-                allWells.hide();
-                $target.show();
-                $target.find('input:eq(0)').focus();
-            }
-        });
+        // Add the appropriate class based on the current index
+        if (index === 0) {
+            progressLine.addClass('line-step-1');
+        } else if (index === 1) {
+            progressLine.addClass('line-step-2');
+        } else if (index === 2) {
+            progressLine.addClass('line-step-3');
+        } else if (index === 3) {
+            progressLine.addClass('line-step-4');
+        }
+    }
 
-        allNextBtn.click(function () {
-            var curStep = $(this).closest(".setup-content"),
-                curStepBtn = curStep.attr("id"),
-                nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-                curInputs = curStep.find("input[type='text'],input[type='url']"),
-                isValid = true;
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this),
+            index = $item.parent().index();
 
-            $(".form-group").removeClass("has-error");
-            for (var i = 0; i < curInputs.length; i++) {
-                if (!curInputs[i].validity.valid) {
-                    isValid = false;
-                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+        if (!$item.hasClass('disabled')) {
+            // Remove active class from all and add to the current item
+            navListItems.removeClass('btn-success btn-active').addClass('btn-default');
+            $item.addClass('btn-success btn-active');
+
+            // Change color for all previous steps
+            navListItems.each(function (i) {
+                if (i < index) {
+                    $(this).removeClass('btn-default').addClass('btn-success');
                 }
-            }
+            });
 
-            if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
-        });
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
 
-        $('div.setup-panel div a.btn-success').trigger('click');
+            // Update the progress line
+            updateLineProgress(index);
+        }
     });
+
+    allNextBtn.click(function () {
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type=\"text\"], input[type=\"url\"]");
+            isValid = true;
+
+        $(".form-group").removeClass("has-error");
+        for (var i = 0; i < curInputs.length; i++) {
+            if (!curInputs[i].validity.valid) {
+                isValid = false;
+                $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+        }
+
+        if (isValid) {
+            nextStepWizard.removeAttr('disabled').trigger('click');
+        }
+    });
+
+    // Trigger the first step on page load
+    $('div.setup-panel div a.btn-success').trigger('click');
+});
+
+
 </script>
