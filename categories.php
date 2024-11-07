@@ -29,25 +29,25 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                 <div class="banner_bottom_item">
-                    <img src="assets/img/categories/cat.png" alt="img">
+                 <a href="shipment-information.php">   <img src="assets/img/categories/cat.png" alt="img"></a>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                 <div class="banner_bottom_item">
-                    <img src="assets/img/categories/Bird.png" alt="img">
+                    <a href="shipment-information.php">   <img src="assets/img/categories/Bird.png" alt="img"></a>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                 <div class="banner_bottom_item">
-                    <img src="assets/img/categories/Dog.png" alt="img">
+                    <a href="shipment-information.php">  <img src="assets/img/categories/Dog.png" alt="img"></a>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                 <div class="banner_bottom_item">
-                    <img src="assets/img/categories/Fish.png" alt="img">
+                    <a href="shipment-information.php">   <img src="assets/img/categories/Fish.png" alt="img"></a>
 
                 </div>
             </div>
@@ -61,19 +61,19 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div class="banner_bottom_item">
-                    <img src="assets/img/categories/pets.png" alt="img">
+                    <a href="shipment-information.php">   <img src="assets/img/categories/pets.png" alt="img"></a>
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div class="banner_bottom_item">
-                    <img src="assets/img/categories/family.png" alt="img">
+                    <a href="shipment-information.php">  <img src="assets/img/categories/family.png" alt="img"></a>
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div class="banner_bottom_item">
-                    <img src="assets/img/categories/reptile.png" alt="img">
+                    <a href="shipment-information.php">   <img src="assets/img/categories/reptile.png" alt="img"></a>
 
                 </div>
             </div>
@@ -85,7 +85,7 @@
 
 
 
-<section id="banner_bottom_area" class="section_padding">
+<section id="banner_bottom_area" class="pb-100">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

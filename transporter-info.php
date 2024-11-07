@@ -185,7 +185,7 @@
                                             <!--begin::Input group-->
                                             <div class="fv-row">
                                                 <!--begin::Dropzone-->
-                                                <div class="dropzone" id="kt_dropzonejs_example_1">
+                                                <div class="dropzone" id="kt_dropzonejs_example_2">
                                                     <!--begin::Message-->
                                                     <div class="dz-message needsclick">
                                                         <i class="ki-duotone ki-file-up fs-3x text-primary"><span
@@ -238,7 +238,7 @@
                                             <!--begin::Input group-->
                                             <div class="fv-row">
                                                 <!--begin::Dropzone-->
-                                                <div class="dropzone1" id="kt_dropzonejs_example_1">
+                                                <div class="dropzone1" id="kt_dropzonejs_example_3">
                                                     <!--begin::Message-->
                                                     <div class="dz-message needsclick">
                                                         <i class="ki-duotone ki-file-up fs-3x text-primary"><span
@@ -323,7 +323,7 @@
                                             <!--begin::Input group-->
                                             <div class="fv-row">
                                                 <!--begin::Dropzone-->
-                                                <div class="dropzone1" id="kt_dropzonejs_example_1">
+                                                <div class="dropzone1" id="kt_dropzonejs_example_4">
                                                     <!--begin::Message-->
                                                     <div class="dz-message needsclick">
                                                         <i class="ki-duotone ki-file-up fs-3x text-primary"><span
@@ -423,7 +423,7 @@
                                     <!--begin::Input group-->
                                     <div class="fv-row">
                                         <!--begin::Dropzone-->
-                                        <div class="dropzone" id="kt_dropzonejs_example_1">
+                                        <div class="dropzone" id="kt_dropzonejs_example_5">
                                             <!--begin::Message-->
                                             <div class="dz-message needsclick">
                                                 <i class="ki-duotone ki-file-up fs-3x text-primary"><span
@@ -431,8 +431,8 @@
 
                                                 <!--begin::Info-->
                                                 <div class="ms-4">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="154"
-                                                        height="154" viewBox="0 0 154 154" fill="none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="154" height="154"
+                                                        viewBox="0 0 154 154" fill="none">
                                                         <path
                                                             d="M3.49194 76.5962C3.49194 41.9446 3.49194 24.6188 14.2535 13.8499C25.0297 3.08838 42.3482 3.08838 76.9998 3.08838C111.651 3.08838 128.977 3.08838 139.739 13.8499C150.508 24.6262 150.508 41.9446 150.508 76.5962C150.508 111.248 150.508 128.574 139.739 139.335C128.984 150.104 111.651 150.104 76.9998 150.104C42.3482 150.104 25.0224 150.104 14.2535 139.335C3.49194 128.581 3.49194 111.248 3.49194 76.5962Z"
                                                             stroke="#B0B0B0" stroke-width="6" />
@@ -441,8 +441,7 @@
                                                             stroke="#B0B0B0" stroke-width="6" />
                                                         <path
                                                             d="M3.49194 80.2716L16.3705 69.0028C19.5985 66.1806 23.7782 64.6904 28.0636 64.8337C32.3489 64.977 36.4197 66.7431 39.452 69.7746L70.9868 101.31C73.4339 103.756 76.6657 105.261 80.1132 105.56C83.5607 105.858 87.003 104.931 89.8342 102.941L92.0321 101.398C96.1162 98.5293 101.052 97.1311 106.034 97.4315C111.016 97.7319 115.748 99.7132 119.458 103.052L143.157 124.376"
-                                                            stroke="#B0B0B0" stroke-width="6"
-                                                            stroke-linecap="round" />
+                                                            stroke="#B0B0B0" stroke-width="6" stroke-linecap="round" />
                                                     </svg>
                                                     <h3 class="fs-5 fw-bold text-gray-900 mb-1">Drop files here
                                                         or click to upload.</h3>
@@ -458,7 +457,7 @@
 
                                 <div class="col-lg-12">
                                     <div class="form-group">
-<br>
+                                        <br>
 
 
                                         <!--begin::Form-->
@@ -470,7 +469,7 @@
                                             <!--begin::Input group-->
                                             <div class="fv-row">
                                                 <!--begin::Dropzone-->
-                                                <div class="dropzone" id="kt_dropzonejs_example_1">
+                                                <div class="dropzone" id="kt_dropzonejs_example_6">
                                                     <!--begin::Message-->
                                                     <div class="dz-message needsclick">
                                                         <i class="ki-duotone ki-file-up fs-3x text-primary"><span
@@ -506,7 +505,7 @@
                                     </div>
                                 </div>
 
-                                
+
 
                                 <div class="col-md-6 offset-md-3">
                                     <div class="submit_btn ">
@@ -537,8 +536,11 @@
 
 
 <script>
-    // Initialize Dropzone
-    var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+  // Dropzone initialization for each dropzone
+var dropzones = ["#kt_dropzonejs_example_1", "#kt_dropzonejs_example_2", "#kt_dropzonejs_example_3", "#kt_dropzonejs_example_4", "#kt_dropzonejs_example_5", "#kt_dropzonejs_example_6"];
+
+dropzones.forEach(function (dropzoneId, index) {
+    var myDropzone = new Dropzone(dropzoneId, {
         url: "#", // No actual server request
         paramName: "file", // The name that will be used to transfer the file
         maxFiles: 10,
@@ -546,17 +548,29 @@
         addRemoveLinks: true,
         autoProcessQueue: false, // Prevent Dropzone from sending files automatically
         init: function () {
-            // Override the addFile method to prevent server interaction
+            var dropzoneMessage = document.querySelector(dropzoneId + " .dz-message");
+
+            // File added handler
             this.on("addedfile", function (file) {
-                console.log("File added:", file.name);
-                // You can add custom preview handling here if needed
+                console.log("File added in Dropzone " + (index + 1) + ":", file.name);
+                
+                // Hide the dz-message when a file is added
+                if (dropzoneMessage) {
+                    dropzoneMessage.style.display = 'none';
+                }
             });
 
-            // Handle file removal without server interaction
+            // File removed handler
             this.on("removedfile", function (file) {
-                console.log("File removed:", file.name);
+                console.log("File removed in Dropzone " + (index + 1) + ":", file.name);
+
+                // Show the dz-message again if there are no files left
+                if (this.files.length === 0 && dropzoneMessage) {
+                    dropzoneMessage.style.display = 'block';
+                }
             });
         }
     });
-</script>
+});
+
 </script>

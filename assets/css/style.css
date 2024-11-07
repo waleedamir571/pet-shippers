@@ -56,6 +56,13 @@ This files table contents are outlined below>>>>>
     box-shadow: none;
 }
 
+.pb-100{
+    padding-bottom: 100px;
+}
+
+.dz-success-mark, .dz-error-mark {
+    display: none !important;
+}
 
 .form-check {
     display: block;
@@ -400,9 +407,9 @@ h3.fs-5.fw-bold.text-gray-900.mb-1 {
 }
 
 .head {
-    font-size: 78px;
+    font-size: 62px;
     font-weight: 700;
-    line-height: 97px;
+    line-height: 85px;
     color: black;
 }
 
@@ -803,13 +810,13 @@ textarea.form-control {
 }
 
 .animation-img-one {
-    -webkit-animation: img-animation-one 2s linear 0s infinite;
+    /* -webkit-animation: img-animation-one 2s linear 0s infinite;
     animation: img-animation-one 2s linear 0s infinite;
     transition: .4s all ease-in-out;
     -webkit-transition: .4s all ease-in-out;
     -moz-transition: .4s all ease-in-out;
     -ms-transition: .4s all ease-in-out;
-    -o-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out; */
 }
 
 @-webkit-keyframes img-animation-one {
@@ -1423,7 +1430,7 @@ textarea.form-control {
 }
 
 .nav_item_footer ul li a:hover {
-    color: var(--main-color);
+    color: rgba(255, 255, 255, 0.50);
 }
 
 .footer_twitter_area p {

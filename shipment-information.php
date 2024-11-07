@@ -59,7 +59,7 @@
         font-size: 12px;
         line-height: 1.428571429;
         border-radius: 55px;
-        background: green;
+        background: rgb(34, 166, 179);
         padding-top: 25px;
     }
 
@@ -624,7 +624,7 @@
 </script>
 
 <script>
-  $(document).ready(function () {
+ $(document).ready(function () {
     var navListItems = $('div.setup-panel div a'),
         allWells = $('.setup-content'),
         allNextBtn = $('.nextBtn'),
@@ -635,11 +635,9 @@
     function updateLineProgress(index) {
         stepwizardRow.find('.line-progress').remove();
 
-        // Add a progress line
         var progressLine = $('<div class="line-progress"></div>');
         stepwizardRow.append(progressLine);
 
-        // Add the appropriate class based on the current index
         if (index === 0) {
             progressLine.addClass('line-step-1');
         } else if (index === 1) {
@@ -651,18 +649,19 @@
         }
     }
 
+    // Disable all steps except the first one
+    navListItems.not(':first').addClass('disabled');
+
     navListItems.click(function (e) {
         e.preventDefault();
-        var $target = $($(this).attr('href')),
-            $item = $(this),
-            index = $item.parent().index();
-
+        var $item = $(this);
         if (!$item.hasClass('disabled')) {
-            // Remove active class from all and add to the current item
+            var $target = $($(this).attr('href')),
+                index = $item.parent().index();
+
             navListItems.removeClass('btn-success btn-active').addClass('btn-default');
             $item.addClass('btn-success btn-active');
 
-            // Change color for all previous steps
             navListItems.each(function (i) {
                 if (i < index) {
                     $(this).removeClass('btn-default').addClass('btn-success');
@@ -673,7 +672,6 @@
             $target.show();
             $target.find('input:eq(0)').focus();
 
-            // Update the progress line
             updateLineProgress(index);
         }
     });
@@ -682,7 +680,7 @@
         var curStep = $(this).closest(".setup-content"),
             curStepBtn = curStep.attr("id"),
             nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-            curInputs = curStep.find("input[type=\"text\"], input[type=\"url\"]");
+            curInputs = curStep.find("input[type=\"text\"], input[type=\"url\"]"),
             isValid = true;
 
         $(".form-group").removeClass("has-error");
@@ -694,13 +692,15 @@
         }
 
         if (isValid) {
-            nextStepWizard.removeAttr('disabled').trigger('click');
+            // Enable the next step
+            nextStepWizard.removeClass('disabled').trigger('click');
         }
     });
 
     // Trigger the first step on page load
     $('div.setup-panel div a.btn-success').trigger('click');
 });
+
 
 
 </script>

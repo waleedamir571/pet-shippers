@@ -4,7 +4,7 @@
     <section id="home_banner">
         <div class="container">
             <div class="row baseline">
-                <div class="col-md-5 ">
+                <div class="col-md-4">
                     <div class="main_banner_text_wrapper">
                         <h1 class="head cabin">Where your pets <br>
                             travel like family.
@@ -17,7 +17,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 offset-md-1">
+                <div class="col-md-7 offset-md-1">
                     <div class="main_banner_img_left">
                         <img src="assets/img/home/head.png" alt="img" class="animation-img-one w-100">
                     </div>

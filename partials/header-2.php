@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title -->
-    <title>Home - Furry </title>
+    <title>Petshipters </title>
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- animate css -->
@@ -85,7 +85,7 @@
                             </div>
                             <div class="option-item">
                             
-                                <a href="sign-in.php">
+                                <a href="">
                                     <p class="auth">Sign up</p>
                                 </a>
                             </div>
